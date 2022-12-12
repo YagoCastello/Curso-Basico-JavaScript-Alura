@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function pulaLinha(){
+            document.write("<br><br><br><br><br>");
+        }
+        function mostra(mensagem){
+            document.write(mensagem);
+            document.write("<br>");
+        }
+        var quantidade_familia=parseInt(prompt("Quantidade de familiares?"));
+        var soma=0;
+        for(var contador=1;contador<=quantidade_familia;contador ++ ){
+            var idade= parseInt(prompt("idade da "+ contador+"ª pessoa:" ));
+            soma=soma+idade;
+
+        }
+        var media=soma/quantidade_familia
+        mostra("A media de idade da sua fámilia composta por "+quantidade_familia+" pessoas é de "+Math.round(media) +" anos")
+
+
+    </script>
+
+
+</body>
+</html>

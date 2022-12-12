@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write("<br><br><br><br><br>");
+        }
+        function mostra(mensagem){
+            document.write(mensagem)
+            document.write("<br>")
+        }
+        var numeroPensado = Math.round(Math.random()*10) ;
+        var chances=3;
+        
+        
+        while(chances>0){
+        var chute=parseInt(prompt("Digite um número inteiro entre 0 e 10, você tem direito a "+(chances)+" chances: "))
+            chances=chances-1;    
+        if (chute==numeroPensado){
+            
+            alert("Você acertou!")
+            chances=0;
+        }
+        else{
+            alert("você errou")
+            
+        }
+        
+        }  
+        
+        
+       mostra("Você errou o número correto era o "+numeroPensado)
+        
+
+    </script>
+
+</body>
+</html>

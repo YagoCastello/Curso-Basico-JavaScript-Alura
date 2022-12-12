@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function pulaLinha(){
+            document.write("<br><br><br><br><br>");
+        }
+        function mostra(mensagem){
+            document.write(mensagem)
+            document.write("<br>")
+        }
+        var valor=parseInt(prompt("Digite o valor da tabuada: "))
+        var contador=1
+        while(contador<=10){
+            mostra(valor+" X "+contador+" = "+ (valor*contador));
+            contador++;
+        }
+        mostra("METODO FOR")
+        for(var multiplicador =1;multiplicador<=10;multiplicador++){
+            mostra(valor+" X "+multiplicador+" = "+ (valor*multiplicador));
+        }
+
+        mostra("FIM!")
+   
+   </script>
+
+</body>
+</html>
