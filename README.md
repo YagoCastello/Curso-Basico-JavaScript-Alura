@@ -1,4 +1,4 @@
-# Curso-Basico-JavaScript-Alura
+# Curso Basico JavaScript Alura
 
 
 Curso basico de JavaScript ofertado pela ONE- Oracle Next Education em colaboração com Alura.
